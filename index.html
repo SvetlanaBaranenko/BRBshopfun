@@ -12,29 +12,34 @@
 </head>
 <body>
     <header class="header-box">
-
+        <!--Боковая панель-->
+        <aside class="sidebar">
+            <div class="social-box">
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Youtube</a>
+            </div>
+        </aside>
+        
         <!--Navbar-->
-
+        
         <nav class="navbar">
-            <img src="./images/Logo.png" alt="Имя компании" class="logo-img" width="68.93">
-            <ul class="nav-links">
-                <li><a href="#about-section" class="nav-link">О нас</a></li>
-                <li><a href="#price-section" class="nav-link">Услуги и цены</a></li>
-                <li><a href="#masters-section" class="nav-link">Мастера</a></li>
-                <li><a href="#footer" class="nav-link">Контакты</a></li>
-            </ul>
+            <div class="nav-holder">
+                <img src="./images/Logo.png" alt="Имя компании" class="logo-img">
+                <ul class="nav-links">
+                    <li><a href="#about-section" class="nav-link">О нас</a></li>
+                    <li><a href="#price-section" class="nav-link">Услуги и цены</a></li>
+                    <li><a href="#masters-section" class="nav-link">Мастера</a></li>
+                    <li><a href="#footer" class="nav-link">Контакты</a></li>
+                </ul>
+                
+            </div>
             <div class="btn-box">
                 <a href="tel:+380441111111" class="phone-link">+38 044 111 11 11</a>
                 <a href="#footer" class="primary-btn">онлайн-запись</a>
             </div>
         </nav>
-        <!--Боковая панель-->
-        <aside class="sidebar">
-            <div class="social-box">
-                <a href="" class="social-link">Instagram</a>
-                <a href="" class="social-link">Youtube</a>
-            </div>
-        </aside>
+        
+        
         <!--Слайдер-->
         <div class="slider">
             <div class="slide">
@@ -43,25 +48,26 @@
                 <p class="hero-description">Мы эксперты в модных мужских стрижках. 
                     Работаем быстро, осторожно и со вкусом.</p>
             </div>
-            <div class="slide">
-                <span></span>
-                <h1></h1>
-                <p></p>
+            <!-- <div class="slider">
+                <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
+                <h1 class="hero-title">BarberShop</h1>
+                <p class="hero-description">Мы эксперты в модных мужских стрижках. 
+                    Работаем быстро, осторожно и со вкусом.</p>
             </div>
-            <div class="slide">
-                <span></span>
-                <h1></h1>
-                <p></p>
-            </div>
+            <div class="slider">
+                <span lang="en" class="suptitle-secondary">A hair salon for men in Kyiv</span>
+                <h1 class="hero-title">BarberShop</h1>
+                <p class="hero-description">Мы эксперты в модных мужских стрижках. 
+                    Работаем быстро, осторожно и со вкусом.</p>
+            </div> -->
         </div>
-
     </header>
 
         <!-- Основной текст -->
     <main class="layout">
 
         <!--О нас-->
-        <section class="about" id="about-section">
+        <section class="section-box about-section" id="about-section">
             <div class="about_image-box">
                 <img src="./images/about-1.jpg" alt="Намазываем пеной бороду" width="270">
                 <img src="./images/about-2.jpg" alt="Бреем опасной бритвой" width="270">
@@ -125,7 +131,7 @@
 
         <!--Почему мы!-->
 
-        <section class="section-box" id="why-section">
+        <section class="section-box why-us_section" id="why-section">
             <div class="number-conteiner">
                 <div class="number-box">
                     <p>600</p>
@@ -160,7 +166,7 @@
             <h2 class="section-title">Наши мастера</h2>
             <ul class="master-list">
                 <li class="master-card">
-                    <img src="./images/img1.jpg" alt="John Smith photo" width="370">
+                    <img src="./images/masters/img1.jpg" alt="John Smith photo" width="370">
                     <p>John Smith</p>
                     <span>Extreme Barber</span>
                     <div class="master-social-box">
@@ -171,7 +177,7 @@
                     </div>
                 </li>
                 <li class="master-card">
-                    <img src="./images/img2.jpg" alt="Michele Doe photo" width="370">
+                    <img src="./images/masters/img2.jpg" alt="Michele Doe photo" width="370">
                     <p>Michele Doe</p>
                     <span>Extreme Barber</span>
                     <div class="master-social-box">
@@ -182,7 +188,7 @@
                     </div>
                 </li>
                 <li class="master-card">
-                    <img src="./images/img3.jpg" alt="Alan Black photo" width="370">
+                    <img src="./images/masters/img3.jpg" alt="Alan Black photo" width="370">
                     <p>Alan Black</p>
                     <span>Extreme Barber</span>
                     <div class="master-social-box">
@@ -200,10 +206,10 @@
         <section class="section-box">
             <span class="suptitle-primary">На латинском языке “барба” означает “борода”</span>
             <div class="image-gallery">
-                <img src="./images/Rectangle 25.jpg" alt="Стрижка машинкой" width="270">
-                <img src="./images/Rectangle 26.jpg" alt="Намазывание пеной бороду" width="270">
-                <img src="./images/Rectangle 27.jpg" alt="Пропариваем лицо" width="270">
-                <img src="./images/Rectangle 28.jpg" alt="Стрижка опасной бритвой" width="270">
+                <img src=".//images/gallery/Rectangle25.jpg" alt="Стрижка машинкой" width="270">
+                <img src="./images/gallery/Rectangle26.jpg" alt="Намазывание пеной бороду" width="270">
+                <img src="./images/gallery/Rectangle27.jpg" alt="Пропариваем лицо" width="270">
+                <img src="./images/gallery/Rectangle28.jpg" alt="Стрижка опасной бритвой" width="270">
             </div>
 
         </section>

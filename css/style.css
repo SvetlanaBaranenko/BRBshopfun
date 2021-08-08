@@ -11,6 +11,11 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 ul{
@@ -23,39 +28,65 @@ a{
     text-decoration: none;     /*Убрали нижнее подчеркивание у ссылок*/
 }
 
+.header-box{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Navbar style */
 
 nav.navbar{
+    width: 100%;
     outline: 2px solid skyblue;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    padding: 30px 55px 0 55px;
+    box-sizing: border-box;
+}
+
+.nav-holder{
+    display: flex;
+    align-items: center;
+    height: 56px;
+}
+
+.logo-img{
+    width: 68px;
+    height: 56px;
+    margin: 0 32px;
 }
 
 .nav-links{
     background-color: aqua;
-    display: inline-block;
+    display: flex;
+    
 }
 
 .nav-links li{
-    display: inline-block;
+    margin: 0 40px;
 }
 
 a.nav-link{
     font-weight: 600;
-    font-size: 12;
-    line-height: 16;
+    font-size: 12px;
+    line-height: 16px;
     color: #ffffff;
     }
 
-a.nav-link:hover,
-.social-link:hover {
+a.nav-link:hover, .social-link:hover{
     color: var(--primary-color)
 }
 
-nav.navbar .btn-box{
-    display: inline-block;
-}
+
 
 /* Кнопка */
 .primary-btn{
+    display: inline-block;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
@@ -74,18 +105,30 @@ nav.navbar .btn-box{
 
 /* Боковая панель */
 
+.sidebar{
+    width: 155px;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
 .social-link{
-    font-weight: 600;
+   
     font-size: 11px;
     line-height: 15px;
     color: var(--text-primary);
 }
 
 /* Slider */
+
+.slider{
+    width: calc( 100% - 155px );
+    background-image: url(../images/slider/slider-img-1.jpg);
+    }
+
 .suptitle-secondary, .suptitle-primary{
     font-weight: 600;
-    font-size: 11;
-    line-height: 15;
+    font-size: 11px;
+    line-height: 15px;
     color: var(--text-primary);
 }
 
@@ -94,9 +137,9 @@ nav.navbar .btn-box{
 }
 
 .hero-description{
-    font-weight: 400;
-    font-size: 18;
-    line-height: 30;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
     color: var(--text-secondary);
 }
 
@@ -120,14 +163,47 @@ p.section-description, .section-suptitle{
     color: var(--text-primary-lighten);
 }
 
+/* Основные стили*/
+
+.section-box{
+    width: 100%;
+    padding: 130px 55px;
+}
+
+.about-section, .why-us_section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_image-box{
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+
+}
+
+.about_image-box img{
+    min-width: 270px;
+}
+
+.description-container{
+    width: 40%;
+}
+
 /* Прайс стили */
 
 .price-list{
-    display: inline-block;
+    display: flex;
+}
+
+.price-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .price-item p, .price-item span{
-    display: inline-block;
+    display: flex;
     font-size: 18px;
     line-height: 30px;
     color: var(--text-secondary);
@@ -135,28 +211,44 @@ p.section-description, .section-suptitle{
 
 /*  Секция - "почему мы?" */
 
+.number-conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 48%;
+    padding: 0 100px;
+}
+
 .number-box{
-    display: inline-block;
-    width: 170px;
+    min-width: 170px;
+    width: 48%;
     height: 132px;
-    color: #F7F7F7;
+    background: #F7F7F7;
+    margin-top: 30px;
 }
 .number-box p, .number-box span{
     display: block;
     font-weight: bold;
     font-size: 42px;
     line-height: 57px;
-    letter-spacing: 0.05em;
+    text-align: center;
     color: var(--text-primary)
 }
 
 .number-box span{
+    font-style: normal;
     font-weight: 600;
     font-size: 11px;
     line-height: 15px;
 }
 
 /* Наши мастера */
+
+.master-list{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 300px;
+}
 
 .master-card p{
     font-size: 18px;
